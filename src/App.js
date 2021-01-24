@@ -4,14 +4,8 @@ import CreateTodo from './components/todos/CreateTodo'
 class App extends Component {
   render() {
     return (
-      <div>
-        <form>
-        <p>  
-          <label>add todo</label>
-            <input type="text" />
-            </p>
-          <input type="text" />   
-        </form>
+      <div className="App"> 
+        <CreateTodo store={this.props.store} />
       </div>
     );
   }
